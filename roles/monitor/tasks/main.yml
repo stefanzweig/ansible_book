@@ -1,0 +1,9 @@
+---
+# - name: get mount info by DF
+#   raw: df -P -x tmpfs -x devtmpfs|grep -v ':'
+
+# - name: get cpu info by CPU
+#   raw: cat /proc/cpuinfo
+
+- name: get os info by UNAME
+  raw: uname -s -r
